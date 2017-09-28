@@ -1,0 +1,20 @@
+<div>
+  <h2>Todo</h2><span class="icon-glass"></span>
+  <div><span>{{todo.remaining()}} of {{todo.tasks.length}} remaining</span> [<a href="" ng-click="todo.archive()">archive</a>]
+    <ul class="unstyled">
+      <li ng-repeat="task in todo.tasks">
+          <div class="checkbox">
+              <label>
+                  <input type="checkbox" ng-model="task.done"><span class="done{{task.done}}">{{task.text}}</span>
+              </label>
+          </div>
+      </li>
+    </ul>
+      <form class="form-inline" role="form" ng-submit="todo.addTask()">
+          <div class="form-group">
+              <input type="text" ng-model="todo.taskText" class="form-control" placeholder="add new todo here">
+          </div>
+          <button type="submit" class="btn btn-primary">add</button>
+      </form>
+  </div>
+</div>
