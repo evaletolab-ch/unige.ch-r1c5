@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="app">
+<html>
     <head>
         <meta charset="utf-8">
         <title ng-bind-template="{{title}}"></title>
@@ -10,20 +10,18 @@
         <link rel="stylesheet" href="css/app.css">
 	    <base href="/" />
     </head>
-    <body ng-controller="AppCtrl">
-        <div ng-include="'/partials/nav.html'"></div>
-
-        <div class="wrapper">
-            <div class="container main-content">
-                <div ui-view="mainView"></div>
-            </div>
-            <div class="push"></div>
+    <body>
+        <unige-nav></unige-nav>
+        <div class="container">
+            <h2>R1C5 - testing SEO</h2>
+            <unige-seo timeout="100"  json="seo-a.json"></unige-seo>
+            <hr/>
+            <unige-seo timeout="2000" json="seo-b.json"></unige-seo>
         </div>
         <br/>
         <footer class="footer">
             <div class="container">
-                <div>Angular Brunch seed app: v<app-version></app-version></div>
-                <small><a href="https://github.com/ocombe/angular-brunch-seed-no-fuss">Angular & brunch - No fuss | Source</a></small>
+                <div>unige.ch: <unige-version></unige-version></div>
             </div>
         </footer>
         <script src="/js/vendor.js"></script>
