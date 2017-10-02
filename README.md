@@ -2,6 +2,7 @@
 * online examples https://evaletolab-ch.github.io/unige.ch-r1c5/
 
 ## Current implemented directives 
+* all directives are implemented in the [followig directory](app/js/directives/)
 * **unige-seo** inject (afer a `timeout`) HTML content loaded from server file `json` 
 * **unige-version** inject current R1C5 version
 ```html
