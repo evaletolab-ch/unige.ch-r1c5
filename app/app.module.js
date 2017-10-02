@@ -1,6 +1,6 @@
 // Declare app level module which depends on filters, and services
 angular.module('app', ['app.templates'])
-	.constant('VERSION', '0.7.0')
+	.constant('VERSION', '0.0.1')
 	.config(appConfig)
 	.run(appRun);
 
