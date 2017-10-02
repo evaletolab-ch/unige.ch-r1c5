@@ -25,9 +25,8 @@ function unigeSeo ($parse, $http) {
         // wait before interpolate template
           scope.title=response.data.title;
           scope.content=response.data.content;        
-        console.log('-------------2',scope.timeout)
       }, function(response) {
-        console.log('------------',response.data)
+        console.log('------------ ERROR',response.data)
       });
     },scope.timeout);
 
