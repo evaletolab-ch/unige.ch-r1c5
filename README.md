@@ -1,31 +1,36 @@
 # R1C5 application 
 
-## hosting
+## Current implemented directives 
+* **unige-seo** inject afer a `timeout` HTML content loaded from server file `json` 
+* **unige-version** inject current `R1C5` version
+```html
+  <unige-seo timeout="100"  json="seo-a.json"></unige-seo>
+  <unige-version></unige-version>
+```
+
+## hosting @unige
 * http://cms.unige.ch/gsem/r1c5/data
  * data (allProf.json, cv_<id>.json, cv_<id>_<en|fr>.pdf)
  * app (vendor.js, app.js, app.css)
+ * (WARNING) we probably should take care about crossdomain issue by using a `jsonp` loader
 
-## Dependencies
-* https://github.com/ocombe/angular-brunch-seed-no-fuss
 
 ## quick help
+* git clone https://github.com/evaletolab-ch/unige.ch-r1c5
 * npm install
-* npm start
-* npm run dev
-* npm run prod
+* brunch w -s
+* brunch build --production
 
 ### Running the app during development
 
-* `npm start` to serve using **Brunch**
+* `brunch w -s` to serve using **Brunch**
 
-Then navigate your browser to [http://localhost:3333](http://localhost:3333)
-If you use your own server, you can use the development script :
+Then navigate your browser to [http://localhost:3000](http://localhost:3000)
 
-* `npm run dev`
 
 ### Running the app in production
 
-* `npm run prod` to minify javascript and css files for production deployment
+* `brunch build --production` to minify javascript and css files for production deployment
 
 Please be aware of the caveats regarding Angular JS and minification, take a look at [Dependency Injection](http://docs.angularjs.org/guide/di) for information.
 
