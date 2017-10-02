@@ -12,7 +12,7 @@
 * http://cms.unige.ch/gsem/r1c5/data
  * data (allProf.json, cv_<id>.json, cv_<id>_<en|fr>.pdf)
  * app (vendor.js, app.js, app.css)
- * (WARNING) we probably should take care about crossdomain issue by using a `jsonp` loader
+ * (`WARNING`) take care about crossdomain issue by using a `jsonp` loader
 
 
 ## quick help
