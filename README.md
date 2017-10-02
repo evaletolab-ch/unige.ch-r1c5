@@ -1,8 +1,9 @@
 # R1C5 application 
+* online examples https://evaletolab-ch.github.io/unige.ch-r1c5/
 
 ## Current implemented directives 
-* **unige-seo** inject afer a `timeout` HTML content loaded from server file `json` 
-* **unige-version** inject current `R1C5` version
+* **unige-seo** inject (afer a `timeout`) HTML content loaded from server file `json` 
+* **unige-version** inject current R1C5 version
 ```html
   <unige-seo timeout="100"  json="seo-a.json"></unige-seo>
   <unige-version></unige-version>
