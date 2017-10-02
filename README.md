@@ -2,7 +2,7 @@
 * online examples https://evaletolab-ch.github.io/unige.ch-r1c5/
 
 ## Current implemented directives 
-* all directives are implemented in the [followig directory](app/js/directives/)
+* all directives are available [here](app/js/directives/)
 * **unige-seo** inject (afer a `timeout`) HTML content loaded from server file `json` 
 * **unige-version** inject current R1C5 version
 ```html
@@ -23,19 +23,17 @@
 * brunch w -s
 * brunch build --production
 
-### Running the app during development
+#### Running the app during development
 
 * `brunch w -s` to serve using **Brunch**
 
 Then navigate your browser to [http://localhost:3000](http://localhost:3000)
 
-
-### Running the app in production
+#### Running the app in production
 
 * `brunch build --production` to minify javascript and css files for production deployment
 
-Please be aware of the caveats regarding Angular JS and minification, take a look at [Dependency Injection](http://docs.angularjs.org/guide/di) for information.
-
+<!--
 ### Running unit tests
 
 * `npm test` to run unit tests with [karma](http://karma-runner.github.io)
