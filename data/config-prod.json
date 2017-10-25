@@ -1,0 +1,36 @@
+{
+  "selectors":{
+    "right":" main article aside"
+  },
+  "layout":{
+    
+  },
+  "types":{
+    "expertise":[
+
+    ],
+    "teaching":[
+
+    ],
+    "contrib":[
+      "journal article",
+      "_book",
+      "_book chapter",
+      "_book editor",
+      "_Book review",
+      "_Proceedings from scientific conference",
+      "_Participation at an Academical or Professional conference",
+      "Faculty research seminar",
+      "journal editor",
+      "_Instructional software",
+      "_Published case",
+      "_Publicly available material describing new curricula or courses",
+      "_Technical report related to funded research project",
+      "_Working Papers",
+      "_Invited in academic conference",
+      "_Documents indirects",
+      "_Proceedings",
+      "_Other"
+    ]
+  }
+}
