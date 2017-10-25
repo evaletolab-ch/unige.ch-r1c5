@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <title ng-bind-template="{{title}}"></title>
@@ -8,32 +8,48 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="fragment" content="!" />
         <link rel="stylesheet" href="css/app.css">
-	    <base href="/unige.ch-r1c5/" />
+	    <base href="/" />
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>        
+        <base href="/unige.ch-r1c5/" />
+
     </head>
     <body>
         <unige-nav></unige-nav>
-        <div class="container">
-            <h2>R1C5 - testing SEO</h2>
-            <blockquote>L'utilisation d'angularjs permet d'injecter des fonctionalités dans un CMS tout en respectant 
-                une convention html. Les injections si-dessous utilisent la balise suivante :
-            </blockquote>
-            <code>
-                &lt;unige-seo timeout="500"  json="seo-a.json"&gt;&lt;/unige-seo&gt;<br/>
-            </code>
-            <unige-seo timeout="500"  json="seo-a.json"></unige-seo>
-            <hr/>
-            <code>
-                &lt;unige-seo timeout="2000"  json="seo-b.json"&gt;&lt;/unige-seo&gt;<br/>
-            </code>
-            <unige-seo timeout="2000" json="seo-b.json"></unige-seo>
-            <hr/>
-            <code>
-                &lt;unige-seo timeout="4000"  json="seo-c.json"&gt;&lt;/unige-seo&gt;<br/>
-            </code>
-            <unige-seo timeout="4000" json="seo-c.json"></unige-seo>
+        <div class="container main">
+            <div class="blog-header">
+                <h1 class="blog-title">R1C5 - data injection</h1>
+                <p class="lead blog-description">
+                    <code>
+                        &lt;unige-member mid="10"  &gt;&lt;/unige-member&gt;<br/>
+                    </code>
+                    <hr/>
+                    
+                </p>
+            </div>
+
+            <div class="row article">
+                <div class="col-sm-8 blog-main">
+                    <unige-member mid="10"  limit="5"></unige-member>
+                    
+                    <nav class="hide">
+                        <ul class="pager">
+                        <li><a href="#">Previous</a></li>
+                        <li><a href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div><!-- /.blog-main -->
+
+                <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                </div><!-- /.blog-sidebar -->
+            </div><!-- /.row -->
+
         </div>
         <br/>
-        <footer class="footer">
+        <footer class="blog-footer">
             <div class="container">
                 <div>unige.ch: <unige-version></unige-version></div>
             </div>
