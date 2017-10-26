@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="nativejson">
     <head>
         <meta charset="utf-8">
         <title ng-bind-template="{{title}}"></title>
@@ -22,16 +22,23 @@
                 <h1 class="blog-title">R1C5 - data injection</h1>
                 <p class="lead blog-description">
                     <code>
+                        &lt;unige-member mid="11"  &gt;&lt;/unige-member&gt;<br/>
+                    </code>
+                    <unige-member mid="11"></unige-member>
+                    <hr/>                    
+                </p>
+                <p class="lead blog-description">
+                    <code>
                         &lt;unige-member mid="10"  &gt;&lt;/unige-member&gt;<br/>
                     </code>
-                    <hr/>
-                    
+                    <hr/>                    
                 </p>
+
             </div>
 
             <div class="row article">
                 <div class="col-sm-8 blog-main">
-                    <unige-member mid="10"  limit="5"></unige-member>
+                    <unige-member mid="10"></unige-member>
                     
                     <nav class="hide">
                         <ul class="pager">
