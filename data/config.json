@@ -39,6 +39,8 @@
     ]
   },
   "title":{
+    "error_en":"Error when loading member ",
+    "error_fr":"Une erreur pendant le chargement du membre ",
     "cv_prof_en":"Bio",
     "cv_prof_fr":"Bio",
     "pedagogicExperiences.expped_en":"",
