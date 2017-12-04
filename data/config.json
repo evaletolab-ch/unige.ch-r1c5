@@ -13,12 +13,12 @@
       "grants.grant",
       "geographicAreas.geozone",
       "teachingDomains.teachdom",
-      "industrialDomains.inddom",
       "unit"
     ],
     "bottom":[],
     "main":[
       "cv_prof",
+      "industrialDomains.inddom",
       "pedagogicExperiences.expped",
       "degrees.diplomas.diploma",
       "researchDomains.themrec",
